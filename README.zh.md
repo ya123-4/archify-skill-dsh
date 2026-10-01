@@ -12,7 +12,7 @@ Archify 能生成精致、经过校验的**架构图 / 工作流图 / 时序图 
 
 纯 Skill 提供：它在 DSH 中插入一个文件系统 Skill provider（`archify-plugin`），其唯一根目录就是
 包内的 `skills/` 目录。**不注册**任何原生渲染/校验/交付工具，没有 Web 客户端，没有遥测，不处理
-凭据，没有后台服务，也没有 `prepare``install``postinstall` 钩子。
+凭据，没有后台服务，也没有 `prepare``install``postinstall`钩子。
 
 | 路径 | 用途 |
 |---|---|
