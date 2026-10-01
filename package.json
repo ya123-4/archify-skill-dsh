@@ -1,0 +1,41 @@
+{
+  "name": "archify-skill-dsh",
+  "version": "3.0.1",
+  "description": "DeepSeek Harness bundle that exposes the Archify 3.0.1 Skill (skill-only: no native tools, no Web client, no install hooks).",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-skill",
+    "architecture-diagram",
+    "workflow-diagram",
+    "sequence-diagram",
+    "dataflow-diagram",
+    "lifecycle-diagram"
+  ],
+  "scripts": {
+    "pack": "npm pack",
+    "check": "node skills/archify/bin/archify.mjs doctor"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

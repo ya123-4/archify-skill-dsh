@@ -1,0 +1,16 @@
+# The vendored skill payload must survive checkout byte-identical
+# (its own integrity checks rely on stable content hashes), so keep
+# text files at LF everywhere and never let autocrlf rewrite them.
+* text=auto
+
+*.mjs   text eol=lf
+*.js    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.html  text eol=lf
+*.txt   text eol=lf
+*.of    text eol=lf
+
+*.png   binary

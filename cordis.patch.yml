@@ -1,0 +1,12 @@
+# Local Archify Skill bundle for DeepSeek Harness.
+# Inserts exactly one filesystem Skill provider whose only root is this
+# package's own `skills/` directory, resolved from the installed package
+# identity anchored at the profile (Loader baseUrl) — never as a path
+# concatenated onto baseUrl.
+- insert:
+    - id: archify-skill-filesystem
+      name: '@deepseek-ai/dsh-skill-filesystem'
+      config:
+        providerName: archify-plugin
+        includeDefaultRoots: false
+        bundledSkillDir: !!js process.getBuiltinModule('node:path').join(process.getBuiltinModule('node:path').dirname(process.getBuiltinModule('node:module').createRequire(baseUrl).resolve('archify-skill-dsh/package.json')), 'skills')
