@@ -1,5 +1,7 @@
 # `archify-skill-dsh`
 
+> English | [中文](README.zh.md)
+
 A [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) bundle that exposes the
 **Archify 3.0.1** filesystem Skill
 ([upstream](https://github.com/tt-a1i/archify), MIT, author tt-a1i) as an installable plugin.
