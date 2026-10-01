@@ -17,7 +17,7 @@ code.
 Skill-only: it inserts one filesystem Skill provider (`archify-plugin`) whose single root is the
 packaged `skills/` directory. It registers no native render/validate/deliver tools, no Web
 client, no telemetry, no credentials handling, no background services, and no
-`prepare` / `install` / `postinstall` hooks.
+`prepare` `install` `postinstall`hooks.
 
 | Path | Purpose |
 |---|---|
